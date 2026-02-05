@@ -23,11 +23,11 @@ interface Props {
 export default function PokemonCard({item, colors}:Props) {
     return (
         <Link href={`/pokemon-list/${item.name}`}>
-            <div className={`${colorMap[colors]} rounded-lg h-[250px] max-sm:h-[80px] text-black hover:scale-[105%] transition duration-100`}>
+            <div className={`${colorMap[colors]} rounded-lg h-[250px] max-sm:h-[130px] text-black hover:scale-[105%] transition duration-100`}>
                 <img
                     src={`${item.image}`}
                     alt="pokemon"
-                    className="h-[200px] w-full max-sm:h-[65px]"
+                    className="h-[200px] w-full max-sm:h-[110px]"
                 />
                 <div className="text-center font-semibold max-sm:text-[8px]">
                     {item.name}
