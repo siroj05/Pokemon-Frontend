@@ -8,7 +8,8 @@ export const usePokemonList = (limit : number, offset : number, search: string |
         queryFn : async () => {
             const res = await getPokemonList({limit, offset, query : search})
             return res.data
-        }
+        },
+        refetchOnWindowFocus : false
     })
 }
 
@@ -18,6 +19,7 @@ export const useGetPokemonDetail = (name : string) => {
         queryFn : async () => {
             const res = await getDetailPokemon(name)
             return res
-        }
+        },
+        refetchOnWindowFocus : false
     })
 }
