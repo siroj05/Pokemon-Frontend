@@ -1,8 +1,8 @@
 # DOKUMENTASI
 
-### Live Demo: https://your-demo-url.vercel.app
+### Live Demo: https://pokemon-siroj.netlify.app/pokemon-list
 
-### Repository: https://github.com/your-username/pokemon-explorer
+### Repository: https://github.com/siroj05/Pokemon-Frontend
 
 ## TECH STACK
 - Next.js -> Framework & routing
