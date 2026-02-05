@@ -60,7 +60,7 @@ export default function Pagination({
       <button
         disabled={currentPage === 1}
         onClick={() => goToPage(currentPage - 1)}
-        className="px-3 py-1 rounded bg-[#3D3D8A] disabled:opacity-50 max-md:px-2 py-1 max-md:text-xs"
+        className="px-3 py-1 rounded bg-[#3D3D8A] disabled:opacity-50 max-md:px-2 py-1 max-md:text-xs cursor-pointer"
       >
         Prev
       </button>
@@ -76,7 +76,7 @@ export default function Pagination({
             key={p}
             onClick={() => goToPage(p as number)}
             className={`
-              px-3 py-1 rounded max-md:px-2 py-1 max-md:text-xs
+              px-3 py-1 rounded max-md:px-2 py-1 max-md:text-xs cursor-pointer
               ${(p as number) === currentPage
                 ? "bg-[#3D3D8A] text-yellow-400"
                 : "bg-gray-400"}
@@ -91,7 +91,7 @@ export default function Pagination({
       <button
         disabled={currentPage === totalPages}
         onClick={() => goToPage(currentPage + 1)}
-        className="px-3 py-1 rounded bg-[#3D3D8A] disabled:opacity-50 max-md:px-2 py-1 max-md:text-xs"
+        className="px-3 py-1 rounded bg-[#3D3D8A] disabled:opacity-50 max-md:px-2 py-1 max-md:text-xs cursor-pointer"
       >
         Next
       </button>

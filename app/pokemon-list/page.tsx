@@ -5,8 +5,8 @@ import PokemonCard from "@/components/pokemon-card";
 import { usePokemonList } from "@/hooks/usePokemon";
 import { useRouter, useSearchParams } from "next/navigation";
 
-const PAGE_SIZE = 20
-export default function Home() {
+export default function ListPokemon() {
+  const PAGE_SIZE = 20
   const searchParams = useSearchParams();
   const page = Number(searchParams.get("page")) || 1;
   const search = searchParams.get("search");
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           :
           isLoading ?
-            <LoadingSpin/>
+            <LoadingSpin />
             :
             // {/* card pokemon */}
             <>

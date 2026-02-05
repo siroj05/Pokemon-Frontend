@@ -1,3 +1,4 @@
+'use client'
 import { PokemonModel } from "@/services/type"
 import Link from "next/link"
 

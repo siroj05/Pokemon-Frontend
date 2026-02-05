@@ -1,3 +1,4 @@
+'use client'
 interface StatBarProps {
   label: string;
   value: number; // nilai asli (misal 65)
